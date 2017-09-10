@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简易计算器</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+   <h3>简易计算器</h3>
+   <div class="container">
+
+       <!--显示面板-->
+       <div id="screen" class="screen">
+           <span id="shu1"></span>
+           <span id="shu2"></span>
+           <span id="shu3"></span>
+           <br/>
+           <span id="shu4">0</span>
+       </div>
+
+      <!-- 按钮组-->
+       <div class="box">
+
+         <!-- 第一排按钮-->
+           <div class="group">
+               <div class="char" id="c00">C</div>
+               <div class="char" id="c0"><img style="width: 30px;margin-top: 5px;" src="./img/back.png"></div>
+               <div id="gen"><img style="width: 30px;margin-top: 5px;" src="./img/gen.png"></div>
+               <div id="a" class="bgffa char">&divide;</div>
+           </div>
+           <div class="clear"></div>
+
+        <!--  第二排按钮-->
+           <div  class="group">
+               <div class="cnum" id="num7">7</div>
+               <div class="cnum" id="num8">8</div>
+               <div class="cnum" id="num9">9</div>
+               <div  id="b" class="bgffa char">&times;</div>
+           </div>
+           <div class="clear"></div>
+
+           <!--第三排按钮-->
+           <div  class="group">
+               <div class="cnum" id="num4">4</div>
+               <div class="cnum" id="num5">5</div>
+               <div class="cnum" id="num6">6</div>
+               <div  id="c" class="bgffa char">-</div>
+           </div>
+           <div class="clear"></div>
+
+          <!-- 第四排按钮-->
+           <div  class="group">
+               <div class="cnum" id="num1">1</div>
+               <div class="cnum" id="num2">2</div>
+               <div class="cnum" id="num3">3</div>
+               <div  id="d" class="bgffa char">+</div>
+           </div>
+           <div class="clear"></div>
+
+          <!-- 第五排按钮-->
+           <div  class="group">
+               <div class="cnum" id="num0" style="width: 148px;">0</div>
+               <div class="cnum" id="num10">.</div>
+               <div id="result" class="bgffa">=</div>
+           </div>
+
+
+       </div>
+   </div>
+<script type="text/javascript" src="./js/index.js">
+</script>
+</body>
+</html>

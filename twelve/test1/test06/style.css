@@ -1,0 +1,115 @@
+/*公共样式*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: cornflowerblue;
+}
+.w200{
+    width: 200px;
+}
+.h150{
+    height: 150px;
+}
+.w150{
+    width: 150px;
+}
+.row{
+    display: -webkit-flex;
+    flex-direction: row;
+}
+.column{
+    display: -webkit-flex;
+    flex-direction: column;
+}
+.col1{
+    flex: 1;
+    -webkit-flex: 1;
+}
+.order1{
+    -webkit-order: 1;
+    order: 1;
+}
+.order2{
+    -webkit-order: 2;
+    order: 2;
+}
+.order3{
+    -webkit-order: 3;
+    order: 3;
+}
+.bgff00ff{
+    background-color: #ff00ff;
+}
+.bgffffff{
+    background-color: #ffffff;
+}
+.mlr0{
+    margin: auto 0;
+}
+.mtb0{
+    margin: 0 auto;
+}
+.w{
+    width: 100%;
+}
+/*容器*/
+.container{
+    width: 800px;
+    height: 2000px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 30px;
+}
+/*怪异盒与正常盒对比样式*/
+.test0{
+    height: 200px;
+}
+.normol{
+    margin: auto 30px;
+    padding: 5px;
+    border: solid 20px red;
+    background-color: bisque;
+}
+.rnormol{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: auto 30px;
+    padding: 10px;
+    border: solid 20px red;
+    background-color: bisque;
+}
+/*column分栏样式*/
+.test1{
+    -webkit-column-count: 2;
+    -webkit-column-rule-style: dotted;
+    -webkit-column-gap: 40px;
+    column-count: 2;
+    column-rule-style: dotted;
+    column-gap: 40px;
+}
+/*旧版盒模型样式*/
+.test2{
+    width: 300px;
+    height: 300px;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    box-pack: center;
+    box-align: center;
+    background-color: bisque;
+    margin: 0 auto;
+}
+/*水平分栏样式*/
+.test3{
+    width: 100%;
+    height: 200px;
+    background-color: cadetblue;
+}
+/*垂直分栏样式*/
+.test4{
+    width: 100%;
+    height: 500px;
+    background-color: chartreuse;
+}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高级前端开发工程师面试题</title>
+    <link type="text/css" rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="wrap">
+    <h3 class="row ac fs32 mt10">前端工程师面试题</h3>
+</header>
+<div class="mt10"></div>
+<section class="wrap block">
+    <h4 class="fs22">1.XML 和 JSON 的区别</h4>
+    <article>
+        (1).数据体积方面。
+        JSON相对于XML来讲，数据的体积小，传递的速度更快些。
+        (2).数据交互方面。
+        JSON与JavaScript的交互更加方便，更容易解析处理，更好的数据交互。
+        (3).数据描述方面。
+        JSON对数据的描述性比XML较差。
+        (4).传输速度方面。
+        JSON的速度要远远快于XML。
+    </article>
+    <h4 class="fs22">2.xhtml和html有什么区别</h4>
+    <article>
+        HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标语言
+        <h5>最主要的不同：</h5>
+        <p>XHTML 元素必须被正确地嵌套。</p>
+        <p>XHTML 元素必须被关闭。</p>
+        <p>标签名必须用小写字母。</p>
+        <p>XHTML 文档必须拥有根元素。</p>
+    </article>
+    <h4 class="fs22">3.Doctype? 严格模式与混杂模式-如何触发这两种模式，区分它们有何意义?</h4>
+    <article>
+        用于声明文档使用那种规范(html/Xhtml)一般为 严格 过度 基于框架的html文档
+        加入XMl声明可触发，解析方式更改为IE5.5 拥有IE5.5的bug
+    </article>
+    <h4 class="fs22">4.谈谈你对webpack的看法?</h4>
+    <article>
+        WebPack 是一个模块打包工具，你可以使用 WebPack 管理你的模块依赖，并编绎输出模块们所需的静态文件。它能够很好地管理、打包Web开发中所用到的 HTML、JavaScript、CSS 以及各种静态文件（图片、字体等），让开发过程更加高效。对于不同类型的资源， webpack 有对应的模块加载器。 webpack 模块打包器会分析模块间的依赖关系，最后 生成了优化且合并后的静态资源。
+        <p>webpack 的两大特色：</p>
+        <p> 1.code splitting（可以自动完成）</p>
+
+        <p>2.loader 可以处理各种类型的静态文件，并且支持串联操作</p>
+        <p> webpack 是以 commonJS 的形式来书写脚本滴，但对 AMD/CMD 的支持也很全面，方便旧项目进行代码迁移。</p>
+        <p> webpack 具有 requireJs 和 browserify 的功能，但仍有很多自己的新特性：</p>
+        <p>1. 对 CommonJS 、 AMD 、ES6的语法做了兼容</p>
+
+        <p> 2. 对js、css、图片等资源文件都支持打包c
+
+        <p> 3. 串联式模块加载器以及插件机制，让其具有更好的灵活性和扩展性，例如提供对CoffeeScript、ES6的支持</p>
+
+        <p> 4. 有独立的配置文件webpack.config.js</p>
+
+        <p>  5. 可以将代码切割成不同的chunk，实现按需加载，降低了初始化时间</p>
+
+        <p> 6. 支持 SourceUrls 和 SourceMaps，易于调试</p>
+
+        <p> 7. 具有强大的Plugin接口，大多是内部插件，使用起来比较灵活</p>
+
+        <p>8.webpack 使用异步 IO 并具有多级缓存。这使得 webpack 很快且在增量编译上更加快</p>
+    </article>
+    <h4 class="fs22">5.说说你对作用域链的理解</h4>
+    <article>
+        作用域链的作用是保证执行环境里有权访问的变量和函数是有序的，作用域链的变量只能向上访问，变量访问到 window 对象即被终止，作用域链向下访问变量是不被允许的
+    </article>
+    <h4 class="fs22">6.创建ajax过程</h4>
+    <article>
+        <p>(1)创建XMLHttpRequest对象,也就是创建一个异步调用对象.</p>
+        <p>(2)创建一个新的HTTP请求,并指定该HTTP请求的方法、URL及验证信息.</p>
+        <p>(3)设置响应HTTP请求状态变化的函数.</p>
+        <p>(4)发送HTTP请求.</p>
+        <p>(5)获取异步调用返回的数据.</p>
+        <p>(6)使用JavaScript和DOM实现局部刷新.</p>
+    </article>
+    <h4 class="fs22">7.前端页面有哪三层构成，分别是什么?作用是什么?</h4>
+    <article>
+        结构层 Html 表示层 CSS 行为层 js
+    </article>
+    <h4 class="fs22">8.常见web安全及防护原理</h4>
+    <article>
+       <p> sql注入原理</p>
+        <p>就是通过把SQL命令插入到Web表单递交或输入域名或页面请求的查询字符串，最终达到欺骗服务器执行恶意的SQL命令。
+            总的来说有以下几点：</p>
+        <p> 1.永远不要信任用户的输入，要对用户的输入进行校验，可以通过正则表达式，或限制长度，对单引号和双"-"进行转换等。</p>
+        <p>2.永远不要使用动态拼装SQL，可以使用参数化的SQL或者直接使用存储过程进行数据查询存取。</p>
+        <p>3.永远不要使用管理员权限的数据库连接，为每个应用使用单独的权限有限的数据库连接。</p>
+        <p> 4.不要把机密信息明文存放，请加密或者hash掉密码和敏感的信息。</p>
+        <div style="height: 20px;width: 100%"></div>
+       <p>XSS原理及防范</p>
+        Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 html 标签或者javascript 代码。比如：攻击者在论坛中放一个
+        看似安全的链接，骗取用户点击后，窃取 cookie 中的用户私密信息；或者攻击者在论坛中加一个恶意表单，
+        当用户提交表单的时候，却把信息传送到攻击者的服务器中，而不是用户原本以为的信任站点。
+       <p> XSS防范方法</p>
+        首先代码里对用户输入的地方和变量都需要仔细检查长度和对 ”<”,”>”,”;”,”’”等字符做过滤；其次任何内容写到页面之前都必须加以 encode ，避免不小心把 html tag 弄出来。这一个层面做好，至少可以堵住超过一半的 XSS 攻击。
+        首先，避免直接在 cookie 中泄露用户隐私，例如email、密码等等。
+        其次，通过使 cookie 和系统 ip 绑定来降低 cookie 泄露后的危险。这样攻击者得到的 cookie 没有实际价值，不可能拿来重放。
+        如果网站不需要再浏览器端对 cookie 进行操作，可以在 Set-Cookie 末尾加上HttpOnly 来防止 javascript 代码直接获取 cookie 。
+        尽量采用 POST 而非 GET 提交表单
+       <p> XSS与CSRF有什么区别吗？</p>
+        XSS 是获取信息，不需要提前知道其他用户页面的代码和数据包。 CSRF 是代替用户完成指定的动作，需要知道其他用户页面的代码和数据包。
+        要完成一次 CSRF 攻击，受害者必须依次完成两个步骤：
+        登录受信任网站A，并在本地生成Cookie。
+        在不登出A的情况下，访问危险网站B。
+        CSRF的防御
+        服务端的 CSRF 方式方法很多样，但总的思想都是一致的，就是在客户端页面增加伪随机数。
+        通过验证码的方法
+    </article>
+    <h4 class="fs22">9.你做的页面在哪些流览器测试过?这些浏览器的内核分别是什么?</h4>
+    <article>
+        Ie(Ie内核) 火狐(Gecko) 谷歌(webkit) opear(Presto)
+    </article>
+    <h4 class="fs22">10.写出几种IE6 BUG的解决方法</h4>
+    <article>
+        <p>1.双边距BUG float引起的 使用display</p>
+        <p>2.3像素问题 使用float引起的 使用dislpay:inline -3px</p>
+        <p>3.超链接hover 点击后失效 使用正确的书写顺序 link visited hover active</p>
+        <p>4.Ie z-index问题 给父级添加position:relative</p>
+        <p>5.Png 透明 使用js代码 改</p>
+        <p>6.Min-height 最小高度 !Important 解决’</p>
+        <p>7.select 在ie6下遮盖 使用iframe嵌套</p>
+        <p>8.为什么没有办法定义1px左右的宽度容器(IE6默认的行高造成的，使用over:hidden,zoom:0.08 line-height:1px)</p>
+        <p>9.ie 6 不支持!important</p>
+    </article>
+    <h4 class="fs22">11对前端模块化的认识</h4>
+    <article>
+        AMD 是 RequireJS 在推广过程中对模块定义的规范化产出。
+              CMD 是 SeaJS 在推广过程中对模块定义的规范化产出。
+              AMD 是提前执行， CMD 是延迟执行。
+              AMD 推荐的风格通过返回一个对象做为模块对象， CommonJS 的风格通过对 module.exports 或 exports 的属性赋值来达到暴露模块对象的目的。
+              CMD模块方式
+              define(function(require, exports, module) {
+
+        // 模块代码
+
+        });
+    </article>
+    <h4 class="fs22">12.你觉得前端工程的价值体现在哪</h4>
+    <article>
+        <p>为简化用户使用提供技术支持（交互部分）</p>
+        <p>为多个浏览器兼容性提供支持</p>
+        <p>为提高用户浏览速度（浏览器性能）提供支持</p>
+        <p>为跨平台或者其他基于webkit或其他渲染引擎的应用提供支持v
+        <p>为展示数据提供支持（数据接口） </p>
+    </article>
+    <h4 class="fs22">13谈谈性能优化问题</h4>
+    <article>
+        <p>代码层面：避免使用css表达式，避免使用高级选择器，通配选择器。</p>
+        <p>缓存利用：缓存Ajax，使用CDN，使用外部js和css文件以便缓存，添加Expires头，服务端配置Etag，减少DNS查找等</p>
+        <p>请求数量：合并样式和脚本，使用css图片精灵，初始首屏之外的图片资源按需加载，静态资源延迟加载。</p>
+        <p> 请求带宽：压缩文件，开启GZIP，</p>
+        <p> 代码层面的优化</p>
+        <p>用 hash-table 来优化查找</p>
+        <p>少用全局变量</p>
+        <p> 用 innerHTML 代替 DOM 操作，减少 DOM 操作次数，优化 javascript 性能</p>
+        <p> 用 setTimeout 来避免页面失去响应</p>
+        <p>缓存DOM节点查找的结果</p>
+        <p> 避免使用CSS Expression</p>
+        <p> 避免全局查询</p>
+        <p> 避免使用with(with会创建自己的作用域，会增加作用域链长度)</p>
+        <p> 多个变量声明合并</p>
+        <p>避免图片和iFrame等的空Src。空Src会重新加载当前页面，影响速度和效率</p>
+        <p> 尽量避免写在HTML标签中写Style属性</p>
+    </article>
+    <h4 class="fs22">14.移动端性能优化</h4>
+    <article>
+        <p> 尽量使用css3动画，开启硬件加速。</p>
+        <p> 适当使用 touch 事件代替 click 事件。</p>
+        <p> 避免使用 css3 渐变阴影效果。</p>
+        <p> 可以用 transform: translateZ(0) 来开启硬件加速。</p>
+        <p> 不滥用Float。Float在渲染时计算量比较大，尽量减少使用</p>
+        <p>不滥用Web字体。Web字体需要下载，解析，重绘当前页面，尽量减少使用。</p>
+        <p>合理使用requestAnimationFrame动画代替setTimeout</p>
+        <p>CSS中的属性（CSS3 transitions、CSS3 3D transforms、Opacity、Canvas、WebGL、Video）会触发GPU渲染，请合理使用。过渡使用会引发手机过耗电增加</p>
+        <p>PC端的在移动端同样适用</p>
+    </article>
+    <h4 class="fs22">15.你如何对网站的文件和资源进行优化?期待的解决方案包括：</h4>
+    <article>
+        1、文件合并
+        2、文件最小化/文件压缩
+        3、使用CDN托管
+        4、缓存的使用
+    </article>
+    <h4 class="fs22">16.ES6的了解</h4>
+    <article>
+        新增模板字符串（为JavaScript提供了简单的字符串插值功能）、箭头函数（操作符左边为输入的参数，而右边则是进行的操作以及返回的值 Inputs=>outputs 。）、for-of （用来遍历数据—例如数组中的值。） arguments 对象可被不定参数和默认参数完美代替。 ES6 将 promise 对象纳入规范，提供了原生的 Promise 对象。增加了 let 和 const 命令，用来声明变量。增加了块级作用域。let命令实际上就增加了块级作用域。ES6规定， var 命令和 function 命令声明的全局变量，属于全局对象的属性； let 命令、 const 命令、 class 命令声明的全局变量，不属于全局对象的属性。。还有就是引入 module 模块的概念
+    </article>
+    <h4 class="fs22">17.清除浮动的几种方式，各自的优缺点</h4>
+    <article>
+        <p>1.使用空标签清除浮动 clear:both(理论上能清楚任何标签，，，增加无意义的标签)</p>
+        <p>2.使用overflow:auto(空标签元素清除浮动而不得不增加无意代码的弊端,,使用zoom:1用于兼容IE)</p>
+        <p>3.是用afert伪元素清除浮动(用于非IE浏览器)</p>
+    </article>
+    <h4 class="fs22">18.css hack</h4>
+    <article>
+        <p><!--[if IE 6]--><![end if]--></p>
+        <p>_marging \\IE 6</p>
+        <p>+margin \\IE 7</p>
+        <p>Marging:0 auto \9 所有Ie</p>
+        <p>Margin \0 \\IE 8</p>
+    </article>
+    <h4 class="fs22">19.js继承方式及其优缺点</h4>
+    <article>
+        <p> 原型链继承的缺点</p>
+        <p> 一是字面量重写原型会中断关系，使用引用类型的原型，并且子类型还无法给超类型传递参数。</p>
+        <p> 借用构造函数（类式继承）</p>
+        <p> 借用构造函数虽然解决了刚才两种问题，但没有原型，则复用无从谈起。所以我们需要原型链+借用构造函数的模式，这种模式称为组合继承</p>
+        <p> 组合式继承</p>
+        <p>组合式继承是比较常用的一种继承方法，其背后的思路是 使用原型链实现对原型属性和方法的继承，而通过借用构造函数来实现对实例属性的继承。这样，既通过在原型上定义方法实现了函数复用，又保证每个实例都有它自己的属性。</p>
+    </article>
+    <h4 class="fs22">20.如何评价AngularJS和BackboneJS</h4>
+    <article>
+        <p> backbone 具有依赖性，依赖 underscore.js 。 Backbone + Underscore + jQuery(or Zepto) 就比一个 AngularJS 多出了2 次HTTP请求.</p>
+        <p> Backbone 的 Model 没有与UI视图数据绑定，而是需要在View中自行操作DOM来更新或读取UI数据。 angularjs 与此相反，Model直接与UI视图绑定， Model 与UI视图的关系，通过 directive 封装， AngularJS 内置的通用 directive ，就能实现大部分操作了，也就是说，基本不必关心 Model 与UI视图的关系，直接操作Model就行了，UI视图自动更新。</p>
+        <p>AngularJS 的 directive ，你输入特定数据，他就能输出相应UI视图。是一个比较完善的前端MVW框架，包含模板，数据双向绑定，路由，模块化，服务，依赖注入等所有功能，模板功能强大丰富，并且是声明式的，自带了丰富的 Angular 指令。</p>
+    </article>
+    <h4 class="fs22">21.说说你对闭包的理解</h4>
+    <article>
+        使用闭包主要是为了设计私有的方法和变量。闭包的优点是可以避免全局变量的污染，缺点是闭包会常驻内存，会增大内存使用量，使用不当很容易造成内存泄露。在js中，函数即闭包，只有函数才会产生作用域的概念
+        闭包有三个特性：
+        <p>1.函数嵌套函数</p>
+        <p> 2.函数内部可以引用外部的参数和变量</p>
+        <p>3.参数和变量不会被垃圾回收机制回收</p>
+    </article>
+    <h4 class="fs22">22.浏览器本地存储</h4>
+    <article>
+        在较高版本的浏览器中， js 提供了 sessionStorage 和 globalStorage 。在Html5 中提供了 localStorage 来取代 globalStorage 。
+        html5 中的 Web Storage 包括了两种存储方式： sessionStorage 和 localStorage 。
+        sessionStorage 用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问并且当会话结束后数据也随之销毁。因此 sessionStorage 不是一种持久化的本地存储，仅仅是会话级别的存储。
+        而 localStorage 用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的。
+    </article>
+    <h4 class="fs22">23.web storage和cookie的区别</h4>
+    <article>
+        Web Storage 的概念和 cookie 相似，区别是它是为了更大容量存储设计的。 Cookie 的大小是受限的，并且每次你请求一个新的页面的时候 Cookie 都会被发送过去，这样无形中浪费了带宽，另外 cookie 还需要指定作用域，不可以跨域调用。
+        除此之外， Web Storage 拥有 setItem,getItem,removeItem,clear 等方法，不像 cookie 需要前端开发者自己封装 setCookie，getCookie 。
+        但是 cookie 也是不可以或缺的： cookie 的作用是与服务器进行交互，作为 HTTP 规范的一部分而存在 ，而 Web Storage 仅仅是为了在本地“存储”数据而生
+        浏览器的支持除了 IE７ 及以下不支持外，其他标准浏览器都完全支持(ie及FF需在web服务器里运行)，值得一提的是IE总是办好事，例如IE7、IE6中的 userData 其实就是 javascript 本地存储的解决方案。通过简单的代码封装可以统一到所有的浏览器都支持 web storage 。
+        localStorage 和 sessionStorage 都具有相同的操作方法，例如 setItem、getItem 和 removeItem 等
+    </article>
+    <h4 class="fs22">24.cookie 和session 的区别：</h4>
+    <article>
+        <p> 1、cookie数据存放在客户的浏览器上，session数据放在服务器上。v
+        <p>2、cookie不是很安全，别人可以分析存放在本地的COOKIE并进行COOKIE欺骗
+        考虑到安全应当使用session。</p>
+        <p>3、session会在一定时间内保存在服务器上。当访问增多，会比较占用你服务器的性能
+        考虑到减轻服务器性能方面，应当使用COOKIE。</p>
+        <p> 4、单个cookie保存的数据不能超过4K，很多浏览器都限制一个站点最多保存20个cookie。</p>
+        <p> 5、所以个人建议：
+        将登陆信息等重要信息存放为SESSION
+        其他信息如果需要保留，可以放在COOKIE中</p>
+    </article>
+    <h4 class="fs22">25.null和undefined的区别？</h4>
+    <article>
+        null 是一个表示"无"的对象，转为数值时为0； undefined 是一个表示"无"的原始值，转为数值时为 NaN 。
+        当声明的变量还未被初始化时，变量的默认值为 undefined 。
+        null 用来表示尚未存在的对象，常用来表示函数企图返回一个不存在的对象。
+        undefined 表示"缺少值"，就是此处应该有一个值，但是还没有定义。典型用法是：
+        <p>（1）变量被声明了，但没有赋值时，就等于undefined。</p>
+        <p>（2) 调用函数时，应该提供的参数没有提供，该参数等于undefined。</p>
+        <p>（3）对象没有赋值的属性，该属性的值为undefined。</p>
+        <p>（4）函数没有返回值时，默认返回undefined。</p>
+        null 表示"没有对象"，即该处不应该有值。典型用法是：
+        <p>（1） 作为函数的参数，表示该函数的参数不是对象。</p>
+        <p>（2） 作为对象原型链的终点。</p>
+    </article>
+    <h4 class="fs22">26.call() 和 apply() 的区别和作用？</h4>
+    <article>
+        作用：动态改变某个类的某个方法的运行环境（执行上下文）。
+    </article>
+    <h4 class="fs22">27.哪些操作会造成内存泄漏？</h4>
+    <article>
+        内存泄漏指任何对象在您不再拥有或需要它之后仍然存在。
+        垃圾回收器定期扫描对象，并计算引用了每个对象的其他对象的数量。如果一个对象的引用数量为 0（没有其他对象引用过该对象），或对该对象的惟一引用是循环的，那么该对象的内存即可回收。
+        setTimeout 的第一个参数使用字符串而非函数的话，会引发内存泄漏。
+        闭包、控制台日志、循环（在两个对象彼此引用且彼此保留时，就会产生一个循环）
+    </article>
+    <h4 class="fs22">28.javascript对象的几种创建方式</h4>
+    <article>
+        <p> 1，工厂模式</p>
+        <p>2，构造函数模式</p>
+        <p> 3，原型模式</p>
+        <p>4，混合构造函数和原型模式</p>
+        <p>5，动态原型模式</p>
+        <p>6，寄生构造函数模式</p>
+        <p>7，稳妥构造函数模式</p>
+    </article>
+    <h4 class="fs22">29.javascript继承的6种方法</h4>
+    <article>
+        <p>1，原型链继承</p>
+        <p>2，借用构造函数继承</p>
+        <p>3，组合继承(原型+借用构造)</p>
+        <p>4，原型式继承</p>
+        <p>5，寄生式继承</p>
+        <p>6，寄生组合式继承</p>
+        </article>
+     <h4 class="fs22">31.异步加载和延迟加载</h4>
+    <article>
+        <p>1.异步加载的方案： 动态插入script标签</p>
+        <p>2.通过ajax去获取js代码，然后通过eval执行</p>
+        <p>3.script标签上添加defer或者async属性</p>
+        <p>4.创建并插入iframe，让它异步执行js</p>
+        <p>5.延迟加载：有些 js 代码并不是页面初始化的时候就立刻需要的，而稍后的某些情况才需要的。</p>
+    </article>
+    <h4 class="fs22">32.事件、IE与火狐的事件机制有什么区别？ 如何阻止冒泡？</h4>
+    <article>
+        <p>1. 我们在网页中的某个操作（有的操作对应多个事件）。例如：当我们点击一个按钮就会产生一个事件。是可以被 JavaScript 侦测到的行为。</p>
+        <p> 2. 事件处理机制：IE是事件冒泡、firefox同时支持两种事件模型，也就是：捕获型事件和冒泡型事件。</p>
+        <p>3. `ev.stopPropagation()`;注意旧ie的方法 `ev.cancelBubble = true`;</p>
+    </article>
+    <h4 class="fs22">33.说说你对AMD和Commonjs的理解</h4>
+    <article>
+        CommonJS 是服务器端模块的规范，Node.js采用了这个规范。 CommonJS 规范加载模块是同步的，也就是说，只有加载完成，才能执行后面的操作。AMD规范则是非同步加载模块，允许指定回调函数。
+        AMD 推荐的风格通过返回一个对象做为模块对象， CommonJS 的风格通过对 module.exports 或 exports 的属性赋值来达到暴露模块对象的目的。
+    </article>
+    <h4 class="fs22">34.请描述一下cookies，sessionStorage和localStorage的区别</h4>
+    <article>
+        sessionStorage用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问并且当会话结束后数据也随之销毁。因此sessionStorage不是一种持久化的本地存储，仅仅是会话级别的存储。而localStorage用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的。
+        <p>web storage和cookie的区别</p>
+        Web Storage的概念和cookie相似，区别是它是为了更大容量存储设计的。Cookie的大小是受限的，并且每次你请求一个新的页面的时候Cookie都会被发送过去，这样无形中浪费了带宽，另外cookie还需要指定作用域，不可以跨域调用。 除此之外，Web Storage拥有setItem,getItem,removeItem,clear等方法，不像cookie需要前端开发者自己封装setCookie，getCookie。但是Cookie也是不可以或缺的：Cookie的作用是与服务器进行交互，作为HTTP规范的一部分而存在 ，而Web Storage仅仅是为了在本地“存储”数据而生。
+    </article> <h4 class="fs22">35.你所了解到的Web攻击技术</h4>
+    <article>
+        <p>（1）XSS（Cross-Site Scripting，跨站脚本攻击）：指通过存在安全漏洞的Web网站注册用户的浏览器内运行非法的HTML标签或者JavaScript进行的一种攻击。</p>
+        <p>（2）SQL注入攻击</p>
+        <p>（3）CSRF（Cross-Site Request Forgeries，跨站点请求伪造）：指攻击者通过设置好的陷阱，强制对已完成的认证用户进行非预期的个人信息或设定信息等某些状态更新。</p>
+    </article>
+
+
+
+
+
+
+
+
+
+</section>
+<div class="mt20"></div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+/*用于测试的样式*/
+.b1{
+     border: solid 1px black;
+ }
+.b2{
+    border: solid 1px #ff0000;
+}
+.bg1{
+    background-color: #ffe4c4;
+}
+/*公共样式部分*/
+body{
+    margin: 0;
+    padding: 0;
+    perspective:1000px;
+    -webkit-perspective: 1000px;
+}
+.row{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+}
+.column{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+.wrap{
+   flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+.col1{
+    flex: 1;
+    -webkit-flex: 1;
+}
+.w180{
+    width: 180px;
+}
+.h180{
+    height: 180px;
+}
+.bftfff{
+    background: rgba(2555, 255, 255, 0.3) none repeat scroll 0 0;
+    filter: alpha(opacity=30);
+}
+
+/*主题样式*/
+.title{
+    text-align: center;
+}
+.container{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateX(-30deg) rotateY(30deg);
+    transform: rotateX(-30deg) rotateY(30deg);
+    aimation:mofang 4s ease-in-out infinite;
+    -webkit-animation: mofang 4s ease-in-out infinite;
+}
+
+.front{
+    position: absolute;
+    -webkit-transform: translateZ(90px);
+    transform: translateZ(90px);
+}
+.front div{
+    width: 58px;
+    height: 58px;
+    background-color: #7ecef4;
+    border-radius: 10px;
+    border: solid 1px #fff;
+}
+.top{
+    position: absolute;
+    -webkit-transform: rotateX(90deg) translateZ(90px);
+    transform: rotateX(90deg) translateZ(90px);
+}
+.top div{
+    width: 58px;
+    height: 58px;
+    background-color: #fff100;
+    border-radius: 10px;
+    border: solid 1px #fff;
+}
+.right{
+    position: absolute;
+    -webkit-transform: rotateY(90deg) translateZ(90px);
+    transform: rotateY(90deg) translateZ(90px);
+}
+.right div{
+    width: 58px;
+    height: 58px;
+    background-color: #e5004f;
+    border-radius: 10px;
+    border: solid 1px #fff;
+}
+.left{
+    position: absolute;
+    -webkit-transform: rotateY(-90deg) translateZ(90px);
+    transform: rotateY(-90deg) translateZ(90px);
+}
+.left div{
+    width: 58px;
+    height: 58px;
+    background-color: #f8b551;
+    border-radius: 10px;
+    border: solid 1px #fff;
+}
+.bottom{
+    position: absolute;
+    -webkit-transform: rotateX(-90deg) translateZ(90px);
+    transform: rotateX(-90deg) translateZ(90px);
+}
+.bottom div{
+    width: 58px;
+    height: 58px;
+    background-color: #51f85d;
+    border-radius: 10px;
+    border: solid 1px #fff;
+}
+.back {
+    position: absolute;
+    -webkit-transform: rotateY(-180deg) translateZ(90px);
+    transform: rotateY(-180deg) translateZ(90px);
+}
+.back div{
+    width: 58px;
+    height: 58px;
+    background-color: #cfa972;
+    border-radius: 10px;
+    border: solid 1px #fff;
+}
+/*动画部分*/
+
+@-webkit-keyframes mofang {
+    from,to{}
+    16%{-webkit-transform: rotateY(-90deg);}
+    33%{-webkit-transform: rotateY(-90deg) rotateZ(135deg);}
+    50%{-webkit-transform: rotateY(225deg)  rotateZ(135deg);}
+    66%{-webkit-transform: rotateY(-135deg)  rotateZ(135deg);}
+    83%{-webkit-transform: rotateX(-90deg);}
+}

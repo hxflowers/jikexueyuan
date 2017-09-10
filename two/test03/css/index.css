@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+/*头部信息*/
+header{
+    overflow: hidden;
+}
+header nav{
+    margin-top: 19px;
+    margin-right: 10px;
+    float: right;
+}
+header nav a{
+    margin-left: 18px;
+    font-size: 13px;
+    color: #333;
+    font-weight: 700;
+    line-height: 24px;
+}
+a{
+    cursor: pointer;
+}
+.showMenu:hover .rightMenu{
+    display: block;
+}
+.rightMenu{
+    display: none;
+    width: 80px;
+    height: 100%;
+    background: #f9f9f9;
+    position: absolute;
+    border-left: solid 1px #dddddd;
+    right: 0;
+    top:0;
+    z-index: 10;
+}
+.menu {
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_0a62ce1.png) no-repeat;
+    cursor: pointer;
+}
+.rightMenu a{
+    display: block;
+    margin: auto;
+    font-weight: normal;
+    color: #666666;
+    text-decoration:none;
+    width: 60px;
+    height: 80px;
+    border-bottom: solid 1px #dddddd;
+}
+.rightMenu a:hover{
+    color: #666666;
+    text-decoration: underline;
+}
+.rightMenu a:first-child{
+    width: 60px;
+    height: 40px;
+    line-height: 60px;
+    border-bottom: solid 1px #dddddd;
+}
+.rightMenu a:last-child{
+    width: 80px;
+    height: 40px;
+    line-height: 10px;
+    text-decoration: underline;
+    border-bottom: none;
+}
+.bdbriimgitem_1{
+    background-position: 0 0;
+}
+.bdbriimgitem_2{
+    background-position: -36px 0;
+}
+.bdbriimgitem_3{
+    width: 40px;
+    background-position: -72px 0;
+}
+.bdbriimgitem_4{
+    background-position: -112px 0;
+}
+.bdbriimgitem_5{
+    background-position: -148px 0;
+}
+.bdbriimgitem_6{
+    background-position: -184px 0;
+}
+.more{
+    width: 60px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 2px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #3385ff;
+    font-weight: normal;
+}
+header nav a:hover{
+    color: blue;
+}
+/*主体部分*/
+.wrapper{
+    min-width: 800px;
+}
+.content{
+    margin-top: 20px;
+    text-align: center;
+}
+.content img{
+    width: 270px;
+    height: 129px;
+}
+form>span{
+    position: relative;
+}
+.soutu-btn{
+    z-index: 1;
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    margin-top: -8px;
+    height: 16px;
+    width: 18px;
+    background: #fff url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_5606e8f.png) no-repeat;
+    cursor: pointer;
+}
+.content input{
+    margin-top: 20px;
+    width: 500px;
+    height: 34px;
+    border: solid 1px #b8b8b8;
+    text-indent: 10px;
+}
+.content .btn{
+    margin-left: -4px;
+    width: 100px;
+    height: 38px;
+    color: #ffffff;
+    background-color: #3385ff;
+    border: solid 1px  #3385ff;
+}
+/*底部信息*/
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+}
+b{
+    color: #666666;
+    font-weight: 700;
+}
+.about{
+    margin-top: 30px;
+}
+.about a{
+
+    margin-left: 30px;
+}
+footer p,a,.code{
+    text-align: center;
+    line-height: 10px;
+    color: darkgray;
+    font-size: 13px;
+}
+.c-icon-icrlogo{
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    overflow: hidden;
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_5859e57.png) no-repeat;
+}
+.icon1{
+    background-position: -600px -96px;
+    position: relative;
+    top: 3px;
+}
+.icon2{
+    background-position: -623px -96px;
+    position: relative;
+    top: 3px;
+}

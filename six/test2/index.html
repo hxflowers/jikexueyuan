@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>焕肤</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+<header class="row ac mt30">
+    <div class="w130 h50 row ac">
+        <img class="w" src="./img/bd_logo1.png">
+    </div>
+    <form class="row br999 positionr" style="background-color: #fff">
+        <div class="row alc h50">
+            <div id="show" class="row ac cursor">
+                <div class="fc999 ml5 fs16">网页</div>
+                <div class="text-title"></div>
+            </div>
+
+            <input id="search" style="margin-top: 2px;" class="fc333 h48 w500 ml10 mr10 row ac" type="text" placeholder="搜你想搜">
+            <div class="row ac w25 h25 mr5 mr10 mr10 wbra50 bge3e2e2">5</div>
+        </div>
+        <div><input class="h fs18 fc333 bgf7f7f7 w120 bl999 cursor" type="submit" value="百度一下"></div>
+        <ul id="itemList" class="item-list">
+            <li>网页</li>
+            <li>音乐</li>
+            <li>图片</li>
+            <li>贴吧</li>
+            <li>视频</li>
+            <li>知道</li>
+        </ul>
+    </form>
+    <ul class="ml10 anniu">
+        <!--<li onclick="changeColor()">1</li>-->
+        <li id="firstLi" style="background-color: #0aa770" onclick="changeColor('#0aa770')"></li>
+        <li style="background-color: #ff44aa" onclick="changeColor('#ff44aa')"></li>
+        <li style="background-color: #7b68ee" onclick="changeColor('#7b68ee')"></li>
+        <li style="background-color: #ff8800" onclick="changeColor('#ff8800')"></li>
+        <li style="background-color: #7a0099" onclick="changeColor('#7a0099')"></li>
+    </ul>
+</header>
+<section>
+    <ul id="change1" class="banner mt40">
+        <li><a class="bait changeColor" href="#">首页</a></li>
+        <li><a class="bait changeColor" href="#">电视剧</a></li>
+        <li><a class="bait changeColor" href="#">最新电影</a></li>
+        <li><a class="bait changeColor" href="#">新闻头条</a></li>
+        <li><a class="bait changeColor" href="#">八卦娱乐</a></li>
+        <li><a class="bait changeColor" href="#">军事热点</a></li>
+        <li><a class="bait changeColor" href="#">热门游戏</a></li>
+        <li><a class="bait changeColor" href="#">小游戏</a></li>
+        <li><a class="bait changeColor" href="#">今日特价</a></li>
+        <li><a class="bait changeColor" href="#">特价旅游</a></li>
+        <li><a class="bait changeColor" href="#">热点车讯</a></li>
+    </ul>
+    <div class="row mt20">
+        <div class="side w300 brddd row al flex-wrap">
+            <div class="w150 h30 row alc">
+                <i class="ia i1"></i>
+                <a class="changeColor" href="#">电视剧</a>
+                <span>|</span>
+                <a class="changeColor" href="#">综艺</a>
+            </div>
+            <div class="w150 h30 row alc">
+                <i class="ib i2"></i>
+                <a class="changeColor" href="#">游戏</a>
+                <span>|</span>
+                <a class="changeColor" href="#">小游戏</a>
+            </div>
+            <div class="w150 h30 row alc">
+                <i class="ia i3"></i>
+                <a class="changeColor" href="#">电影</a>
+                <span>|</span>
+                <a class="changeColor" href="#">直播</a>
+            </div>
+            <div class="w150 h30 row alc">
+                <i class="ia i4"></i>
+                <a class="changeColor" href="#">动画</a>
+                <span>|</span>
+                <a class="changeColor" href="#">动漫</a>
+            </div>
+            <div class="w150 h30 row alc">
+                <i class="ia i5"></i>
+                <a class="changeColor" href="#">新闻</a>
+                <span>|</span>
+                <a class="changeColor" href="#">军事</a>
+            </div>
+            <div class="w150 h30 row alc">
+                <i class="ib i6"></i>
+                <a id="lvyou" href="#">旅游</a>
+                <span>|</span>
+                <a class="changeColor" href="#">音乐</a>
+            </div>
+            <div class="w150 h30 row alc">
+                <i class="ia i7"></i>
+                <a class="changeColor" href="#">彩票</a>
+                <span>|</span>
+                <a class="changeColor" href="#">小游戏</a>
+            </div>
+            <div class="w150 h30 row alc">
+                <i class="ib i8"></i>
+                <a class="changeColor" href="#">搞笑</a>
+                <span>|</span>
+                <a class="changeColor" href="#">小说</a>
+            </div>
+        </div>
+        <div style="width: 886px;" class="right brddd ml10 row al flex-wrap">
+            <div class="w147 h30 row alc">
+                <img src="https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/img/baiduzhongban-4.gif?1500102892">
+                <a class="changeColor" href="">百度</a>
+                <span class="row ac"></span>
+                <a class="changeColor" href="#">贴吧</a>
+            </div>
+            <div class="w147 h30 row alc">
+                <i class="iq"></i>
+                <a class="changeColor" href="">新浪</a>
+                <span class="row ac"></span>
+                <a class="changeColor" href="#">微博</a>
+            </div>
+            <div class="w147 h30 row alc">
+                <i class="iw"></i>
+                <a class="changeColor" href="#">搜狐</a>
+                <span class="row ac"></span>
+                <a class="changeColor" href="#">热点</a>
+            </div>
+            <div class="w147 h30 row alc">
+                <i class="ie"></i>
+                <a class="changeColor" href="">腾     讯</a>
+            </div>
+            <div class="w147 h30 row alc">
+                <i class="ir"></i>
+                <a class="changeColor" href="">网     易</a>
+            </div>
+            <div class="w147 h30 row alc">
+                <i class="it"></i>
+                <a class="changeColor" href="">优  酷  网</a>
+            </div>
+
+            <div class="w147 h30 row alc">
+                 <img src="https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/img/shouye/mingzhan/tianmao2015082101.gif?1500102892"/>
+                 <a class="changeColor" href="">天猫</a>
+             </div>
+            <div class="w147 h30 row alc">
+                <i class="iy"></i>
+                <a class="changeColor" href="">凤 凰 网</a>
+            </div>
+            <div class="w147 h30 row alc">
+                <i class="iu"></i>
+                <a class="changeColor" href="">淘 宝  网</a>
+            </div>
+            <div class="w147 h30 row alc">
+                <i class="io"></i>
+                <a class="changeColor" href="">免费游戏</a>
+            </div>
+            <div class="w147 h30 row alc">
+                <i class="ip"></i>
+                <a class="changeColor" href="">4399游戏</a>
+            </div>
+            <div class="w147 h30 row alc">
+                <i class="is"></i>
+                <a class="changeColor" href="">hao123影视</a>
+            </div>
+
+            <div class="w147 h30 row alc">
+                <i class="id" style="margin-left: 35px;"></i>
+                <a class="changeColor" href="">京东商城</a>
+            </div>
+            <div class="w147 h30 row alc">
+                <i class="if"></i>
+                <a class="changeColor" href="">苏宁易购</a>
+            </div>
+            <div class="w147 h30 row alc">
+                <i class="ig"></i>
+                <a class="changeColor" href="">今日特价</a>
+            </div>
+            <div class="w147 h30 row alc">
+                <i class="ih"></i>
+                <a class="changeColor" href="">体育</a>
+                <span class="row ac"></span>
+                <a class="changeColor" href="#">NBA</a>
+            </div>
+            <div class="w147 h30 row alc">
+                <i class="ij"></i>
+                <a class="changeColor" href="">汽车之家</a>
+            </div>
+            <div class="w147 h30 row alc">
+                <i class="ik"></i>
+                <a class="changeColor" href="">聚划算</a>
+            </div>
+
+
+            <div class="btitem w147 h30 row alc">
+                <a class="deit" href="">爱奇艺高清</a>
+            </div>
+            <div class="btitem w147 h30 row alc">
+                <a  class="deit" href="">新浪新闻</a>
+            </div>
+            <div class="btitem w147 h30 row alc">
+                <a  class="deit" href="">163邮箱</a>
+            </div>
+            <div class="btitem w147 h30 row alc">
+                <a  class="deit" href="">起点中文网</a>
+            </div>
+            <div class="btitem w147 h30 row alc">
+                <a  class="deit" href="">新  浪</a>
+            </div>
+            <div class="btitem w147 h30 row alc">
+                <a  class="deit" href="">中华军事</a>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="./common.js"></script>
+</body>
+</html>

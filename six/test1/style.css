@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clear{
+    clear: both;
+}
+.ml0{
+    margin-left: 0 !important;
+}
+.bgd66c42{
+    background-color: #d66c42;
+    border: solid 1px  #d66c42 ;
+    -moz-box-shadow:1px 1px 5px  #d66c42;               /* For Firefox3.6+ */
+    -webkit-box-shadow:1px 1px 5px  #d66c42;            /* For Chrome5+, Safari5+ */
+    box-shadow:1px 1px 5px #d66c42;
+}
+.bg898c91{
+    background-color: #898c91;
+    border: solid 1px #898c91;
+    -moz-box-shadow:1px 1px 5px  #898c91;               /* For Firefox3.6+ */
+    -webkit-box-shadow:1px 1px 5px #898c91;            /* For Chrome5+, Safari5+ */
+    box-shadow:1px 1px 5px #898c91;
+}
+.bg414141{
+    background-color: #414141;
+    border: solid 1px #414141;
+    -moz-box-shadow:1px 1px 5px #414141;               /* For Firefox3.6+ */
+    -webkit-box-shadow:1px 1px 5px #414141;            /* For Chrome5+, Safari5+ */
+    box-shadow:1px 1px 5px #414141;
+}
+.bgc9c8cd{
+    background-color: #c9c8cd;
+    border: solid 1px #c9c8cd;
+    -moz-box-shadow:2px 2px 5px #999;               /* For Firefox3.6+ */
+    -webkit-box-shadow:2px 2px 5px #999;            /* For Chrome5+, Safari5+ */
+    box-shadow:2px 2px 5px #999;
+}
+.container{
+    position: fixed;
+    width: 300px;
+    height: 340px;
+    top: 50%;
+    left: 50%;
+    padding: 15px;
+    margin-left: -150px;
+    margin-top: -170px;
+    background-color: #d0d8db;
+    border-radius: 8px;
+}
+.screen{
+    width: 300px;
+    height: 60px;
+    background-color: #fff;
+    -moz-box-shadow:0px 5px 5px #999 inset;               /* For Firefox3.6+ */
+    -webkit-box-shadow:0px 5px 5px #999 inset;            /* For Chrome5+, Safari5+ */
+    box-shadow:0px 5px 5px #999 inset;
+    border-radius: 4px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    text-align: right;
+    display:table-cell;
+    vertical-align:bottom;
+}
+.pannel{
+    width: 100%;
+    margin-top: 20px;
+    height: 260px;
+}
+.group{
+    width: 100%;
+    margin-top: 10px;
+    height: 42px;
+}
+.group div{
+    float: left;
+    width: 50px;
+    height: 30px;
+    margin-top: 6px;
+    text-align: center;
+    margin-left: 10px;
+    color: #fff;
+    border-radius: 4px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.dengyu{
+    position: absolute;
+    right: 0;
+    bottom: 13px;
+    width: 50px;
+    height: 84px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    display: table-cell;
+    vertical-align:middle;
+    cursor: pointer;
+    line-height: 84px;
+}

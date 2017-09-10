@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ebebeb;
+}
+.conWidth{
+    width: 1000px;
+    min-width: 1000px;
+    margin: auto;
+}
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}
+.clear{
+    clear: both;
+}
+.w{
+    width: 100%;
+}
+.h{
+    height: 100%;
+}
+.h60{
+    height: 60px;
+}
+.mt30{
+    margin-top: 30px;
+}
+.ml60{
+    margin-left: 60px;
+}
+.bgfff{
+    background-color: #fff;
+}
+a{
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.fc35b558{
+    color: #35b558 !important;
+}
+.cursor{
+    cursor: pointer;
+}
+.positionr{
+    position: relative;
+}
+.positiona{
+    position: absolute;
+}
+.bt35b558{
+    border-top: solid 1px #35b558;
+}
+.bl35b558{
+    border-left: solid 1px #35b558;
+}
+.h57{
+    height: 57px;
+}
+.w750{
+    width: 750px;
+}
+.h160{
+    height: 160px;
+}
+.w240{
+    width: 240px;
+}
+.mt20{
+    margin-top: 20px;
+}
+.mt50{
+    margin-top: 50px;
+ }
+.h330{
+    height: 330px;
+}
+.overfl{
+    overflow: hidden;
+}
+.w6000{
+    width: 6000px;
+}
+.left0{
+    left: 0;
+}
+.top0{
+    top:0;
+}
+.mtf2{
+    margin-top:-2px;
+}
+.w1000{
+    width: 1000px;
+}
+.w3500{
+    width: 3500px;
+}
+.h200{
+    height: 200px;
+}
+.ml200{
+    margin-left: 200px;
+}

@@ -1,0 +1,16 @@
+.btn{
+    width: 200px;
+    height: 30px;
+    background-color: #ff5a00;
+    color: #fff;
+    line-height: 30px;
+    border-radius: 5px;
+    margin-left: 60px;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+#result{
+    margin-top: 10px;
+    color: #555;
+}
